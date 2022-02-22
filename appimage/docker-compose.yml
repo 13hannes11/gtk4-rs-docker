@@ -1,0 +1,7 @@
+version: "3"
+services:
+  rust-gtk-appimage:
+    build: .
+    volumes:
+      - ../adwaita-demo:/mnt:z
+    command: /bin/bash -c "cargo appimage"

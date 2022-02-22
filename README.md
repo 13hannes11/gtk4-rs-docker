@@ -6,16 +6,21 @@ This repository contains the build instructions for a rust libadwaita gtk app. A
 
 To build the image go to the main repository and run:
 
-
 ### BaseImage
 
 ```
 docker build base -t gtk4-rs-docker
 ```
 
+### AppImage
+
+```
+docker build appimage -t gtk4-rs-docker
+```
+
 ## Compiling the example application
 
-To compile the example application use docker-compose (note your system needs `libadwaita` to run the example application):
+To compile the example application use docker-compose (note your system needs `libadwaita` to run the example application unless you build the AppImage):
 
 ```
 docker-compose up
