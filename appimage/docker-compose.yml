@@ -1,7 +1,7 @@
 version: "3"
 services:
   rust-gtk-appimage:
-    build: .
+    image: ghcr.io/13hannes11/gtk4-rs-docker:latest-appimage
     volumes:
       - ../adwaita-demo:/mnt:z
     command: /bin/bash -c "cargo appimage"
