@@ -3,6 +3,6 @@ services:
   rust-gtk:
     image: ghcr.io/13hannes11/gtk4-rs-docker:latest
     volumes:
-      - ./adwaita-demo:/mnt:z
+      - ../adwaita-demo:/mnt:z
     command: /bin/bash -c "cargo build --release"
 

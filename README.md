@@ -6,8 +6,11 @@ This repository contains the build instructions for a rust libadwaita gtk app. A
 
 To build the image go to the main repository and run:
 
+
+### BaseImage
+
 ```
-docker build gtk4-rs-docker -t gtk4-rs-docker
+docker build base -t gtk4-rs-docker
 ```
 
 ## Compiling the example application
@@ -21,10 +24,10 @@ docker-compose up
 ## Using for your own application
 
 To use this image for your own application simply copy the docker-compose file to your application directory and modify the path of the volume mount to your project directory:
-You need to modify `./adwaita-demo` to that path in in the compose file):
+You need to modify `../adwaita-demo` to that path in in the compose file):
 ```
     volumes:
-      - ./adwaita-demo:/mnt:z
+      - ../adwaita-demo:/mnt:z
 ```
 
 ## Contributing
