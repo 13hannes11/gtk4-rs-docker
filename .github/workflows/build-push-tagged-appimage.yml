@@ -1,4 +1,4 @@
-name: build-push-tagged
+name: build-push-tagged-appimage
 
 on:
   push:
