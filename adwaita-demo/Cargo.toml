@@ -14,3 +14,8 @@ auto_link_exclude_list = [
     "libdl.so*",
     "libpthread.so*",
 ]
+
+[[bin]] # fix for cargo appimage not finding the binary
+name = "adwaita-demo" # crate name
+path = "src/main.rs"
+
