@@ -1,5 +1,5 @@
 FROM fedora:latest
-ARG RUST_VERSION=1.72.1
+ARG RUST_VERSION=1.85.0
 ENV RUST_VERSION=$RUST_VERSION
 
 RUN dnf install gtk4-devel gcc libadwaita-devel -y
